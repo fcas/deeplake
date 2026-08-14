@@ -7,19 +7,12 @@
 <h1 align="center">Deep Lake: Database for AI</h1>
 
 <p align="center">
-    <a href="https://github.com/activeloopai/deeplake/actions/workflows/test-pr-on-label.yml"><img src="https://github.com/activeloopai/deeplake/actions/workflows/test-push.yml/badge.svg" alt="PyPI version" height="18"></a>
     <a href="https://pypi.org/project/deeplake/"><img src="https://badge.fury.io/py/deeplake.svg" alt="PyPI version" height="18"></a>
-    <a href='https://docs.deeplake.ai/en/latest/?badge=latest'>
-     <img src='https://readthedocs.org/projects/deep-lake/badge/?version=latest' alt='Documentation Status' />
-     </a>
     <a href="https://pepy.tech/project/deeplake"><img src="https://static.pepy.tech/badge/deeplake" alt="PyPI version" height="18"></a>
-     <a href="https://github.com/activeloopai/deeplake/issues">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/activeloopai/deeplake"> </a>
-    <a href="https://codecov.io/gh/activeloopai/deeplake/branch/main"><img src="https://codecov.io/gh/activeloopai/deeplake/branch/main/graph/badge.svg" alt="codecov" height="18"></a>
   <h3 align="center">
-   <a href="https://docs.activeloop.ai/?utm_source=github&utm_medium=github&utm_campaign=github_readme&utm_id=readme"><b>Docs</b></a> &bull;
-   <a href="https://docs.activeloop.ai/getting-started/?utm_source=github&utm_medium=github&utm_campaign=github_readme&utm_id=readme"><b>Get Started</b></a> &bull;
-   <a href="https://docs.deeplake.ai/?utm_source=github&utm_medium=github&utm_campaign=github_readme&utm_id=readme"><b>API Reference</b></a> &bull;  
+   <a href="https://docs.deeplake.ai/?utm_source=github&utm_medium=github&utm_campaign=github_readme&utm_id=readme"><b>Docs</b></a> &bull;
+   <a href="https://docs.deeplake.ai/latest/getting-started/quickstart/?utm_source=github&utm_medium=github&utm_campaign=github_readme&utm_id=readme"><b>Get Started</b></a> &bull;
+   <a href="https://docs.deeplake.ai/latest/api/dataset/?utm_source=github&utm_medium=github&utm_campaign=github_readme&utm_id=readme"><b>API Reference</b></a> &bull;  
    <a href="http://learn.activeloop.ai"><b>LangChain & VectorDBs Course</b></a> &bull;
    <a href="https://www.activeloop.ai/resources/?utm_source=github&utm_medium=github&utm_campaign=github_readme&utm_id=readme"><b>Blog</b></a> &bull;
    <a href="https://www.deeplake.ai/?utm_source=github&utm_medium=github&utm_campaign=github_readme&utm_id=readme"><b>Whitepaper</b></a> &bull;  
@@ -27,16 +20,14 @@
   <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Factiveloop.ai%2F&via=activeloopai&text=Deep%20Lake%20is%20the%20Database%20for%20all%20AI%20data.%20Check%20it%20out%21&hashtags=DeepLake%2Cactiveloop%2Copensource"><b>Twitter</b></a>
  </h3>
 
-*Read this in other languages: [简体中文](README.zh-cn.md)*
-
 ## What is Deep Lake?
 
 Deep Lake is a Database for AI powered by a storage format optimized for deep-learning applications. Deep Lake can be used for:
 
-1. Storing data and vectors while building LLM applications
+1. Storing and searching data plus vectors while building LLM applications
 2. Managing datasets while training deep learning models
    
-Deep Lake simplifies the deployment of enterprise-grade LLM-based products by offering storage for all data types (embeddings, audio, text, videos, images, pdfs, annotations, etc.), querying and vector search, data streaming while training models at scale, data versioning and lineage, and integrations with popular tools such as LangChain, LlamaIndex, Weights & Biases, and many more. Deep Lake works with data of any size, it is serverless, and it enables you to store all of your data in your own cloud and in one place. Deep Lake is used by Intel, Bayer Radiology, Matterport, ZERO Systems, Red Cross, Yale, & Oxford. 
+Deep Lake simplifies the deployment of enterprise-grade LLM-based products by offering storage for all data types (embeddings, audio, text, videos, images, dicom, pdfs, annotations, [and more](https://docs.deeplake.ai/latest/api/types/)), querying and vector search, data streaming while training models at scale, data versioning and lineage, and integrations with popular tools such as LangChain, LlamaIndex, Weights & Biases, and many more. Deep Lake works with data of any size, it is serverless, and it enables you to store all of your data in your own cloud and in one place. Deep Lake is used by Intel, Bayer Radiology, Matterport, ZERO Systems, Red Cross, Yale, & Oxford. 
 
 ### Deep Lake includes the following features:
 
@@ -49,16 +40,12 @@ Use one API to upload, download, and stream datasets to/from S3, Azure, GCP, Act
 Store images, audio, and videos in their native compression. Slice, index, iterate, and interact with your data like a collection of NumPy arrays in your system's memory. Deep Lake lazily loads data only when needed, e.g., when training a model or running queries.
 </details>
 <details>
-  <summary><b>Dataset Version Control</b></summary>
-Commits, branches, checkout - Concepts you are already familiar with in your code repositories can now be applied to your datasets as well!
-</details>
-<details>
   <summary><b>Dataloaders for Popular Deep Learning Frameworks</b></summary>
 Deep Lake comes with built-in dataloaders for Pytorch and TensorFlow. Train your model with a few lines of code - we even take care of dataset shuffling. :)
 </details>
 <details>
   <summary><b>Integrations with Powerful Tools</b></summary>
-Deep Lake has integrations with <a href="https://github.com/hwchase17/langchain">Langchain</a> and <a href="https://github.com/jerryjliu/llama_index">LLamaIndex</a> as a vector store for LLM apps, <a href="https://wandb.ai/">Weights & Biases</a> for data lineage during model training, and <a href="https://github.com/open-mmlab/mmdetection">MMDetection</a> for training object detection models.
+Deep Lake has integrations with <a href="https://github.com/hwchase17/langchain">Langchain</a> and <a href="https://github.com/jerryjliu/llama_index">LLamaIndex</a> as a vector store for LLM apps, <a href="https://wandb.ai/">Weights & Biases</a> for data lineage during model training, <a href="https://github.com/open-mmlab/mmdetection">MMDetection</a> for training object detection models, and <a href="https://github.com/open-mmlab/mmsegmentation">MMSegmentation</a> for training semantic segmentation models.
 </details>
 <details>
   <summary><b>100+ most-popular image, video, and audio datasets available in seconds</b></summary>
@@ -72,22 +59,11 @@ Deep Lake datasets are instantly visualized with bounding boxes, masks, annotati
 
 [![Visualizer](https://www.linkpicture.com/q/ReadMe.gif "Visualizer")](https://www.youtube.com/watch?v=SxsofpSIw3k)
 
-## 🚀 Performance
-
-Deep Lake's performant dataloader built in C++ speeds up data streaming by >2x compared to Hub 2.x (Ofeidis et al. 2022, Hambardzumyan et al. 2023)
-
-<div align="center">
-<a href="https://arxiv.org/pdf/2209.10785.pdf"><img src="docs/source/_static/img/benchmarks.png" type="image"></a>
-</div>
-
-
-
 ## 🚀 How to install Deep Lake
 Deep Lake can be installed using pip:
 ```sh
-pip3 install deeplake
+pip install deeplake
 ```
-**By default, Deep Lake does not install dependencies for audio, video, google-cloud, and other features. Details on all installation options are [available here](https://docs.deeplake.ai/en/latest/Installation.html).**
 
 ### To access all of Deep Lake's features, please register in the [Deep Lake App](https://app.activeloop.ai/register/).
 
@@ -95,36 +71,28 @@ pip3 install deeplake
 
 ### Vector Store Applications
 Using Deep Lake as a Vector Store for building LLM applications:
-### - [Vector Store Quickstart](https://docs.activeloop.ai/quickstart)
-### - [Vector Store Getting Started Guide](https://docs.activeloop.ai/getting-started/vector-store)
-### - [Using Deep Lake with LangChain](https://docs.activeloop.ai/tutorials/vector-store/deep-lake-vector-store-in-langchain)
-### - [Image Similarity Search with Deep Lake](https://docs.activeloop.ai/tutorials/vector-store/image-similarity-search)
+### - [Vector Store Quickstart](https://docs.deeplake.ai/latest/guides/rag/)
+### - [Vector Store Tutorials](https://docs-v3.activeloop.ai/examples/rag/tutorials)
+### - [LangChain Integration](https://docs-v3.activeloop.ai/examples/rag/langchain-integration)
+### - [LlamaIndex Integration](https://docs-v3.activeloop.ai/examples/rag/llamaindex-integration)
+### - [Image Similarity Search with Deep Lake](https://docs.deeplake.ai/latest/guides/rag/#5-integrating-image-embeddings-for-multi-modal-search)
 
 
 ### Deep Learning Applications
 Using Deep Lake for managing data while training Deep Learning models:
-### - [Deep Learning Quickstart](https://docs.activeloop.ai/quickstart-dl)
-### - [Deep Learning Getting Started Guide](https://docs.activeloop.ai/getting-started/deep-learning)
-### - [Tutorials for Training Models](https://docs.activeloop.ai/tutorials/deep-learning/training-models)
-### - [Tutorials for Creating Deep Learning Datasets](https://docs.activeloop.ai/tutorials/deep-learning/creating-datasets)
-### - [Deep Learning Playbooks](https://docs.activeloop.ai/playbooks/evaluating-model-performance)
+### - [Deep Learning Quickstart](https://docs.deeplake.ai/latest/guides/deep-learning/deep-learning/)
+### - [Tutorials for Training Models](https://docs-v3.activeloop.ai/examples/dl/tutorials/training-models)
 
 ## ⚙️ Integrations
 
 Deep Lake offers integrations with other tools in order to streamline your deep learning workflows. Current integrations include:
 
-* **Model Training**
-  * Stream data while training thousands of pre-built models using [MMDetection](https://github.com/open-mmlab/mmdetection), a popular open-source object detection toolbox based on PyTorch. Learn more in [this tutorial](https://docs.activeloop.ai/tutorials/training-models/training-models-using-mmdetection).
-  
-* **Experiment Tracking**
-  * Track experiments and achieve full model reproducibility using Deep Lake and [Weights & Biases](https://wandb.ai/). Our integration automatically pushes dataset-related information (uri, commit hash, view id) to your W&B runs. Further details are available [in our model-reproducibility playbook](https://docs.activeloop.ai/playbooks/training-reproducibility-with-wandb).
-  
 * **LLM Apps**
   * Use [Deep Lake as a vector store for LLM apps](https://www.activeloop.ai/resources/ultimate-guide-to-lang-chain-deep-lake-build-chat-gpt-to-answer-questions-on-your-financial-data/). Our integration combines the [Langchain](https://github.com/hwchase17/langchain) [VectorStores API](https://python.langchain.com/en/latest/reference/modules/vectorstore.html?highlight=pinecone#langchain.vectorstores.DeepLake) with Deep Lake datasets as the underlying data storage. The integration is a serverless vector store that can be deployed locally or in a cloud of your choice.
 
 ## 📚 Documentation
 
-Getting started guides, examples, tutorials, API reference, and other useful information can be found on our [documentation page](http://docs.activeloop.ai/?utm_source=github&utm_medium=repo&utm_campaign=readme).
+Getting started guides, examples, tutorials, API reference, and other useful information can be found on our [documentation page](http://docs.deeplake.ai/?utm_source=github&utm_medium=repo&utm_campaign=readme).
 
 ## 🎓 For Students and Educators
 Deep Lake users can access and visualize a variety of popular datasets through a free integration with Deep Lake's App. Universities can get up to 1TB of data storage and 100,000 monthly queries on the Tensor Database for free per month. Chat in on [our website](https://activeloop.ai): to claim the access!
@@ -228,13 +196,6 @@ Using Deep Lake? Add a README badge to let everyone know:
 Deep Lake users may have access to a variety of publicly available datasets. We do not host or distribute these datasets, vouch for their quality or fairness, or claim that you have a license to use the datasets. It is your responsibility to determine whether you have permission to use the datasets under their license.
 
 If you're a dataset owner and do not want your dataset to be included in this library, please get in touch through a [GitHub issue](https://github.com/activeloopai/deeplake/issues/new). Thank you for your contribution to the ML community!
-
-</details>
-
-<details>
-  <summary><b> Usage Tracking</b></summary>
-
-By default, we collect usage data using Bugout (here's the [code](https://github.com/activeloopai/deeplake/blob/853456a314b4fb5623c936c825601097b0685119/deeplake/__init__.py#L24) that does it). It does not collect user data other than anonymized IP address data, and it only logs the Deep Lake library's own actions. This helps our team understand how the tool is used and how to build features that matter to you! After you register with Activeloop, data is no longer anonymous. You can always opt-out of reporting by setting an environmental variable ```BUGGER_OFF``` to ```True```:
 
 </details>
 
